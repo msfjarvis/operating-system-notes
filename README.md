@@ -5,3 +5,4 @@ Notes from my college classes for the Operating System subject, written in markd
 ## Topics
 
 - [Booting process](booting_process.md)
+- [Types of Operating Systems](types_of_operating_systems.md)
