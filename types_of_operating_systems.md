@@ -2,20 +2,21 @@
 
 Operating Systems are classified under multiple categories depending on their scheduling and execution techniques. Some more common types of Operating Systems are as follows:
 
-* Multiple programming OS
-* Multiple processing OS
+* Batch OS
+* Multi-programmed OS
 * Time sharing OS
+* Network OS
+* Distributed OS
 * Real-time OS
 * Network OS
-* Parallel OS
 
-## Multiple programming OS
+## Batch OS
 
-An OS that can run multiple *programs* on a *single* processor is a multiple programming OS.
+__NEEDS TO BE RESEARCHED ON OUR OWN__. Example of a Batch OS is IBM 360.
 
-## Multiple processing OS
+## Multi-programmed OS
 
-An OS that can execute multiple *programs* in parallel on *multiple* processors is a multiple processing OS.
+An OS that can run multiple *programs* on a *single* processor is a multi-programmed OS.
 
 ## Time sharing OS
 
