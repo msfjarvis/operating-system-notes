@@ -42,3 +42,34 @@ OS also keeps track of the main memory -- which parts are used and which are unu
 Allocation and de-allocation of main memory blocks is also done by the OS. Allocation of the memory to processes when it requests it and de-allocation of the memory at the end of the process lifecycle.
 
 OS decides which process will get the memory when and in what amount.
+
+## Device Management
+
+* OS manages drive communication via their respective drivers
+* OS decides which process gets device access at what time and for what duration
+* Using I/O controller, OS keeps track of all devices and their (de)allocation.
+
+## File Management
+
+* The OS keeps track of status, location and uses of resources. Allocation of resources when required and de-allocation of resources when their work is completed is also the OS' job.
+
+### Security and Protection
+
+Preventing unauthorized access to programs and data, a defence of the system against internal and external attacks. These attacks include Denial-of-Service (DoS), viruses, identity theft, or theft of service.
+
+#### Protection
+
+A mechanism for controlling access of processes and users to resources defined by the OS.
+
+## Error detection
+
+Applications which allow standard communication between user and software with the help of OS error detecting mechanism.
+
+## User Interface
+
+Two types of user interfaces exist:
+
+* CLI - Command Line Interface
+* GUI - Graphical User Interface
+
+The OS provides a GUI for higher functions without writing any commands. This allows us to communicate with the computer with the help of buttons, and cursors.
