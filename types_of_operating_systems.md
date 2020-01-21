@@ -3,7 +3,8 @@
 Operating Systems are classified under multiple categories depending on their scheduling and execution techniques. Some more common types of Operating Systems are as follows:
 
 * Batch OS
-* Multi-programmed OS
+* Multiprogramming OS
+* Multiprocessing OS
 * Time sharing OS
 * Network OS
 * Distributed OS
@@ -31,13 +32,13 @@ The OS is termed as batch processing because the input data or jobs are collecte
 * Operating system's major task was to transfer content automatically from one job to the next.
 * The operating system was always resident in the memory.
 
-### Advantages
+### Advantages of Batch OS
 
 * Batch processing is particularly useful for the operations that require the computer or a peripheral device for an extended period of time and requires very little user interaction.
 * Batch processing takes much of the work of the operator to the computer.
 * Increased performance as a new job gets started as soon as the previous job is finished, without manual intervention.
 
-### Disadvantages
+### Disadvantages of Batch OS
 
 * Job setup was a real problem. It took a lot of time for mounting of tapes or cards.
 * No interaction is possible with user while the program is being executed.
@@ -49,9 +50,35 @@ In order to reduce the wastage of time during job transition, automatic job sequ
 
 Resident Monitor has many identifiable parts, the major one of which was the control card interpreter that was responsible for reading and carrying out instructions on the cards at the point of execution.
 
-## Multi-programmed OS
+## Multiprogramming OS
 
-An OS that can run multiple *programs* on a *single* processor is a multi-programmed OS.
+The need of a system that could keep the CPU always busy with either I/O work or execution of other instructions was felt deeply. The implementation of this came to be known as multiprogramming OS.
+
+* The OS could support keeping multiple jobs in memory at the same time
+* The OS could pick and start one job from memory. Whenever the job doesn't need CPU, i.e. during I/O device communication, the OS switches to another job in the memory pool and executes it until it requests I/O, or the previous operation finishes I/O and demands CPU time again.
+* The OS in this case is very complex.
+* A very high level of memory management is expected from such an OS.
+* Switching between jobs is a complex operation as it requires the OS to keep track of how much work was done on each job before it was replaced by another and then resume directly from there.
+
+### Advantages of Multiprogramming OS
+
+* High CPU utilization
+* Creates the illusion that many programs are allotted execution time simultaneously
+
+### Disadvantages of Multiprogramming OS
+
+* CPU scheduling is required
+* To accommodate many jobs in memory, efficient memory management is required
+
+## Multiprocessing OS
+
+If a system's workload cannot be handled satisfactorily by a single processor, one option is to throw multiple processors at the problem and create a multi-processor environment. This is called a Multiprocessing OS and is a fairly common setup.
+
+Multiprocessing OS refers to the use of two or more CPUs within a single computer system. These multiple CPUs are in a close communication sharing the computer bus, memory & other peripheral devices. These systems are referred to as *tightly couple systems*.
+
+These types of systems are used when very high speed is required to process a large volume of data. These systems are generally used in environment like satellite control, weather forecasting etc. The basic organization of multiprocessing system is as follows.
+
+![Flow of data in a Multiprocessing OS](multiprocessing_flow.png)
 
 ## Time sharing OS
 
