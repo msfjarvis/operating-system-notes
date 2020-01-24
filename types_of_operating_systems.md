@@ -82,8 +82,12 @@ These types of systems are used when very high speed is required to process a la
 
 ## Time sharing OS
 
-Operating Systems that schedule tasks based on a set quota of time and offload them when the time is up regardless of completion state are called time sharing OSes.
-
 ## Real-time OS
 
-They are of two types, soft real-time OS and hard real-time OS.
+A real time operating system is one in which the correctness of computation not only depends on the correctness of the logical computation but also upon the time at which the result is produced.
+
+If the timing constraint of the system are not met, then system failure is said to have occurred.
+
+It is defined as an OS known to give maximum time for each of the critical operations that occur, like syscalls and interrupt handling.
+
+It is essential that the timing constraints of the system are guaranteed to be met. Guaranteeing timing (deadline) behavior requires that the system should be predictable. It is also desirable that the system should attain a high degree of utilization while satisfying the timing constraints of the system.
